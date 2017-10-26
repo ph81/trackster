@@ -1,0 +1,107 @@
+/*
+  Custom styles for Trackster App
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.4;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Bootstrap overrides */
+
+.navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.navbar.navbar-default {
+  border: none;
+}
+
+
+/* Header */
+
+.navbar {
+  padding: 24px 300px 24px 100px;
+  margin-bottom: 0;
+  background-color: rgb(35, 2, 63);
+}
+
+.navbar .title {
+  font-family: 'Righteous';
+  font-size: 2.5rem;
+  color: rgb(255,0,171);
+  text-transform: lowercase;
+}
+
+.navbar .search {
+  margin-right: 1rem;
+}
+
+.navbar .search input {
+  border-radius: 20px;
+  width: 350px;
+}
+
+.search-btn {
+  background-color: rgb(255, 0, 171);
+  border-radius: 20px;
+}
+
+.search-btn:hover {
+  background-color: rgb(255, 102, 204);
+}
+
+
+/* Displaying search results */
+
+.attributes {
+  background-color: rgb(104, 0, 255);
+  color: white;
+  padding: 10px;
+}
+
+/* Adjusting for five columns */
+
+
+.col-half-offset {
+    margin-left:4.166666667%
+}
+
+
+/* tracklist */
+
+.track {
+  display: flex;
+  padding: .6rem;
+  border-bottom: 1px solid #cccccc;
+  line-height: 1;
+}
+
+.track:hover {
+  background-color: #f0eef3;
+}
+
+.track div {
+  display: flex;
+  align-items: center;
+}
+
+.play-button a {
+  display: flex;
+  align-items: center;
+  color: #ff00ab;
+}
+
+.play-button a:hover {
+  color: #ff66cc;
+}
