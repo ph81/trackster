@@ -5,7 +5,8 @@ var API_KEY = 'ea3f97421d04a8631a35d75c3e7f9838';
 
 
 $(document).ready(function() {
-  $('#search-btn').click(function () {
+  $('#search-btn').click(function (event) {
+    event.preventDefault();
     Trackster.searchTracksByTitle($('#search-field').val());
   });
 });
@@ -59,9 +60,6 @@ Trackster.searchTracksByTitle = function(title) {
   var api_url = 'https://ws.audioscrobbler.com/2.0/?method=track.search&track=' + title + '&api_key=' + API_KEY + '&format=json';
   console.log(api_url);
 
-
-  event.preventDefault();
-  
   $.ajax({
     dataType: "json",
     url: api_url,
