@@ -43,6 +43,17 @@ input:focus {
   text-transform: lowercase;
 }
 
+.animate {
+  animation: flipper 0.2s linear infinite;
+}
+
+@keyframes flipper {
+  0% { transform: rotateX(0deg); color: rgb(255, 0, 171);}
+  50% { color: rgb(104, 0, 255);}
+  100% { transform: rotateX(360deg); color: rgb(255, 0, 171);}
+}
+
+
 .navbar .search {
   margin-right: 1rem;
 }
@@ -60,6 +71,27 @@ input:focus {
 .search-btn:hover {
   background-color: rgb(255, 102, 204);
 }
+
+
+@media only screen and (max-width: 768px) {
+
+  .navbar {
+    padding: 14px 200px 14px 100px;
+    text-align: center;
+  }
+
+
+   .navbar-form {
+      border:none !important;
+      box-shadow: none !important;
+  }
+
+
+
+
+}
+
+
 
 
 /* Displaying search results */
@@ -104,4 +136,15 @@ input:focus {
 
 .play-button a:hover {
   color: #ff66cc;
+}
+
+.artist:hover {
+  font-weight: bold;
+}
+
+/* Sorting */
+
+.sort:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
